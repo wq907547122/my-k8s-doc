@@ -19,3 +19,18 @@ git checkout -b gh-pages
 7. git push
 
 ```
+
+:::tip 注意
+提交项目的访问路径需要和你在GitHub上创建的名称一致
+:::
+```js(4)
+module.exports = {
+  title: '搭建学习K8S的文档',
+  description: '记录学习的信息',
+  base: '/my-k8s-doc/',
+  dest: './dist',
+  port: '8888',
+  head: [
+      ['link', {rel: 'icon', href: '/logo.png'}]
+  ],
+```
